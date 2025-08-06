@@ -594,6 +594,7 @@ header {
     padding: 5%;
     height: 1100px;
     width: 1900px;
+    align-items: center;
 }
 
 .inner-sambutan {
