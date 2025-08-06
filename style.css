@@ -405,3 +405,90 @@ header {
     top: -30%;
     left: -3%;
 }
+
+.prog-jud {
+    margin-top: 5%;
+}
+
+.prog-jud h1 {
+    margin: 0;
+}
+
+.program {
+    padding: 0 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-prog-col {
+    display: flex;
+    flex: 1;
+    padding: 5%;
+    gap: 2rem;
+}
+
+.card-prog {
+  width: 300px;  /* contoh, boleh 250px, 280px, dst sesuai keinginan */
+  /* atau */
+  flex: 1 1 0;
+  min-width: 250px; /* pastikan semua card punya minimal width sama */
+  /* biasanya pakai salah satu ya, bukan dua-duanya */
+}
+
+.img-con {
+    background-image: url(/assets/back-prog-card.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    border-radius: 20px;
+    align-items: end;
+    overflow: hidden;
+}
+
+.img-con:hover {
+    transform: translateY(-10px);
+}
+
+.prog-img img {
+    display: block;    /* biar ikut di-center oleh text-align */
+    width: 100%;               /* kasih width proporsional, jangan 100% */
+    margin: 0 auto;       /* kalau pakai display: block, auto-center */
+    transition: all 0.3s ease;
+    height: auto;             /* biar proporsional */
+}
+
+
+.prog-img img:hover {
+    transform: scale(1.05);
+}
+
+.reverse {
+    background-image: url(/assets/back-prog-card1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    border-radius: 20px;
+    align-items: end;
+    overflow: hidden;
+}
+
+.prog-text {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.prog-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
