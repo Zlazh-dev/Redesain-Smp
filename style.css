@@ -66,10 +66,17 @@ header {
 }
 
 .hero {
-    padding: 2%;
+    padding: 5% 8% 5% 8%;
     margin: 5% 2% 0 2%;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-text-button {
+    width: 60%;
 }
 
 .hero-text-button h1 {
@@ -88,7 +95,7 @@ header {
 
 .text-hero {
     display: block;
-    width: 45%;
+    width: 80%;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     font-size: large;
@@ -97,7 +104,7 @@ header {
 
 
 .tombol-hero {
-    margin-top: 2%;
+    margin-top: 5%;
     display: flex;
     gap: 0.6rem;
 }
@@ -120,3 +127,32 @@ header {
     background-color: aqua;
     color: #5A7C44;
 } 
+
+.hero-picture {
+    background-image: url(/assets/hero-front-box.png);
+    background-size: cover;
+    height: 500px;
+    width: 50%;
+    border-radius: 25px;
+    align-items: end;
+    display: flex;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-picture:hover {
+    transform: translateY(-10px);
+}
+
+.hero-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Tinggi otomatis agar proporsi tetap */
+}
+
+.hero-picture img:hover {
+    transform: scale(1.1);
+}
