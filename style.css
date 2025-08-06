@@ -30,6 +30,9 @@ a {
 }
 
 header {
+    position: sticky;
+    top: 0; /* posisikan elemen menempel di sisi atas layar */
+    z-index: 100;
     margin: 0 2% 0 2%;
     background-color: #5A7C44;
     border-radius: 0 0 10px 10px;
@@ -40,6 +43,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5%;
+}
+
+.header-sticky img {
+    display: block;
+    height: 45px;
+    width: 50px;
+    margin-left: 1%;
 }
 
 .daftar-sekarang-btn {
