@@ -428,11 +428,10 @@ header {
 }
 
 .card-prog {
-  width: 300px;  /* contoh, boleh 250px, 280px, dst sesuai keinginan */
+  width: 300px;
   /* atau */
   flex: 1 1 0;
-  min-width: 250px; /* pastikan semua card punya minimal width sama */
-  /* biasanya pakai salah satu ya, bukan dua-duanya */
+  min-width: 250px;
 }
 
 .img-con {
@@ -491,4 +490,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.coks {
+    font-weight: 600;
 }
