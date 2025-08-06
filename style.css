@@ -584,3 +584,28 @@ header {
 .pres-bolo {
     font-weight: 500;
 }
+
+.ads-btn {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.sambutan {
+    padding: 5%;
+    height: 1100px;
+    width: 1900px;
+}
+
+.inner-sambutan {
+    background-image: url(/assets/sambutan-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    border-radius: 50px;
+}
+
+.inner-sambutan p {
+    visibility: hidden;
+}
