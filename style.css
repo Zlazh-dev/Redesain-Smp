@@ -1,0 +1,49 @@
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Poppins', 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Reset list styles */
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[data-anim] {
+  opacity: 0;
+}
+[data-anim].animate__animated {
+  opacity: 1; /* Akan muncul saat class animate__animated ditambahkan */
+}
+
+header {
+    margin: 0 2% 0 2%;
+    background-color: #5A7C44;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-sticky {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+
+.daftar-sekarang-btn {
+    background-color: #f5f5f5;
+    color: #5A7C44;
+    font-weight: 700;
+}
