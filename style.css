@@ -60,9 +60,9 @@ header {
 }
 
 .daftar-sekarang-btn:hover {
-    background-color: #6d7e62;
-    color: #dddddd;
-    border-color: #6d7e62;
+    background-color: #96ce71;
+    color: #ffffff;
+    border-color: #96ce71;
 }
 
 .hero {
@@ -99,7 +99,7 @@ header {
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     font-size: large;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 
@@ -112,7 +112,14 @@ header {
 .daftar-hero {
     padding: 8px 50px 8px 50px;
     font-weight: 500;
-} 
+    transition: all 0.3s ease;
+}
+
+.daftar-hero:hover {
+    background-color: #9dff00;
+    color: #4a7522;
+    border-color: #9dff00;
+}
 
 .daftar-hero1 {
     padding: 8px 25px 8px 25px;
@@ -124,8 +131,9 @@ header {
 }
 
 .daftar-hero1:hover {
-    background-color: aqua;
-    color: #5A7C44;
+    background-color: rgb(126, 151, 151);
+    color: #ffffff;
+    border-color: rgb(126, 151, 151);
 } 
 
 .hero-picture {
@@ -156,3 +164,116 @@ header {
 .hero-picture img:hover {
     transform: scale(1.1);
 }
+
+.promotion {
+    padding: 8% 3% 8% 3%;
+    overflow: hidden;
+}
+
+.promotion-card {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+.card-pro {
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 2%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: crosshair;
+}
+
+.card-pro:hover {
+    background-color: #dddddd;
+    transform: translateY(-10px);
+}
+
+.card-pro a {
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.card-pro a:hover {
+    color: #fff;
+}
+
+.berita {
+    background: #5A7C44;
+    padding: 2% 8% 2% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.judul-div {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.judul-div h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text-judul {
+    font-weight: 400;
+    color: #fff;
+    font-size: medium;
+}
+
+.card-news-con {
+    padding: 5%;
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.card-news-child {
+    background: #ffffff;
+    padding: 2%;
+    border-radius: 15px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.news-text {
+    margin-top: 8%;
+}
+
+.news-text h3 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.card-tombol {
+    transition: all 0.3s ease;
+    margin-top: 5%;
+}
+
+.card-tombol:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.slen {
+    background-color: #9dff00;
+    transition: all 0.3s ease;
+    color: #685656;
+    font-weight: 600;
+}
+
+.slen:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-10px);
+    border: #ffffff;
+}
+
