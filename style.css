@@ -403,7 +403,7 @@ header {
     position: absolute;
     width: 450px;
     top: -30%;
-    left: -3%;
+    left: -4.9%;
 }
 
 .prog-jud {
@@ -494,4 +494,93 @@ header {
 
 .coks {
     font-weight: 600;
+}
+
+.prestasi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 10% 10%;
+    background-image: url(/assets/back-prin.webp);
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: 5%;
+}
+
+.img-wrap {
+  flex: 1;
+  transition: flex 0.5s cubic-bezier(.39,.12,.49,.99), filter 0.4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-wrap:last-child {
+    border-radius: 0 30px 0 0;
+}
+
+.img-wrap:first-child {
+    border-radius: 30px 0 0 0;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 400px; /* boleh sesuaikan tinggi */
+  object-fit: cover;
+  transition: filter 0.3s;
+  display: block;
+}
+
+.img-caption {
+  position: absolute;
+  bottom: 0; left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.68);
+  color: #fff;
+  padding: 18px 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  font-size: 1.1em;
+}
+
+/* Saat hover satu gambar */
+.img-wrap:hover,
+.img-wrap:focus-within {
+  flex: 3;
+  z-index: 1;
+}
+.img-wrap:hover img,
+.img-wrap:focus-within img {
+  filter: brightness(1.5) saturate(1) blur(0.5px);
+}
+
+/* Munculkan caption saat hover */
+.img-wrap:hover .img-caption,
+.img-wrap:focus-within .img-caption {
+  opacity: 1;
+}
+
+/* Saat bukan gambar yang dihover, kecilkan */
+.img-container:hover .img-wrap:not(:hover),
+.img-container:focus-within .img-wrap:not(:focus-within) {
+  flex: 0.7;
+  filter: brightness(0.5) grayscale(0.4);
+}
+
+.prestasi-btn {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pres-bolo {
+    font-weight: 500;
 }
