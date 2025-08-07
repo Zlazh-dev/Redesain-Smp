@@ -1,0 +1,393 @@
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Poppins', 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Reset list styles */
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[data-anim] {
+  opacity: 0;
+}
+[data-anim].animate__animated {
+  opacity: 1; /* Akan muncul saat class animate__animated ditambahkan */
+}
+
+header {
+    padding: 1%;
+    position: relative;
+    position: sticky;
+    top: 0;             /* Nempel di bagian paling atas */
+    z-index: 999;       /* Supaya selalu di atas konten lain */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);  /* Efek bayangan, opsional */
+    /* Tambahan style lain (padding, font, dll) sesuai kebutuhan */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1%;
+    width: auto;
+    height: 600px;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.hero-text-button {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    width: 325px;
+    padding: 2%;
+    align-items: center;
+}
+
+.hero-text-button h1 {
+    font-size: large;
+}
+
+.hero-text-button h3 {
+    font-size: medium;
+}
+
+.text-hero {
+    font-size: small;
+    text-align: center;
+}
+
+.hero-picture {
+    width: 300px;
+    height: 100%;
+}
+
+.tombol-hero {
+    padding: 2%;
+    width: auto;
+    height: 100px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Pastikan lebar parent fleksibel */
+  height: 300px;
+}
+
+.promotion-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;       /* Biar nggak pindah ke bawah */
+  overflow-x: auto;        /* Munculkan scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Smooth di iOS */
+  gap: 16px;
+  width: 100%;   /* Biar lebar card mengikuti parent */
+  max-width: 100%; /* Agar tidak melebihi layar */
+}
+
+.card-pro {
+  padding: 5%;
+  height: 200px;
+  flex: 0 0 auto;           /* Biar lebar card tetap */
+  width: 200px;
+  align-items: center;
+}
+
+.text-pro h3 {
+    font-size: large;
+    font-weight: 500;
+}
+
+.text-pro p {
+    font-size: small;
+}
+
+.program {
+    height: auto;
+    width: 100%;
+    padding: 5% 3% 5% 3%;
+}
+
+.prog-jud h1 {
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.prog-jud {
+    padding: 0;
+    margin: 0;
+}
+
+.mit-jud-isi {
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    font-size: small;
+}
+
+.card-prog-col {
+    margin: 0%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+}
+
+.card-prog {
+    width: 150px;
+    height: 450px;
+    margin-top: 0%;
+}
+
+.img-con {
+    height: fit-content;
+}
+
+.prog-text h3 {
+    font-size: large;
+    font-weight: 700;
+}
+
+.prog-text p {
+    font-size: small;
+}
+
+.prog-text {
+    margin-top: 5%;
+}
+
+.ads-img {
+    width: 250px;
+    left: 50px;
+    top: -100px;
+}
+
+.ads {
+    margin-top: 20%;
+}
+
+.inner-ads {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-btn-ads {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5%;
+    margin-top: 15%;
+}
+
+.text-btn-ads h3 {
+    font-size: large;
+}
+
+.text-btn-ads p {
+    font-size: small;
+}
+
+.inner-sambutan {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.text-sambutan {
+    width: 100%;
+}
+
+.text-sambutan h1 {
+    font-size: large;
+}
+
+.text-sambutan p {
+    font-size: small;
+}
+
+.nama-kep h3 {
+    font-size: medium;
+}
+
+.img-card img {
+    height: 200px;
+}
+
+.prestasi {
+    padding-top: 5%;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrap.active,
+.img-wrap:hover,
+.img-wrap:focus-within {
+  flex: 3;
+  z-index: 1;
+}
+
+.img-wrap.active img,
+.img-wrap:hover img,
+.img-wrap:focus-within img {
+  filter: brightness(1.5) saturate(1) blur(0.5px);
+}
+
+.img-wrap.active .img-caption,
+.img-wrap:hover .img-caption,
+.img-wrap:focus-within .img-caption {
+  opacity: 1;
+}
+
+.img-container:hover .img-wrap:not(.active):not(:hover),
+.img-container:focus-within .img-wrap:not(.active):not(:focus-within) {
+  flex: 0.7;
+  filter: brightness(0.5) grayscale(0.4);
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    }
+    .img-wrap {
+      flex: 1;
+      transition: flex 0.5s cubic-bezier(.39,.12,.49,.99), filter 0.4s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+      
+    }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: filter 0.3s;
+    }
+
+.img-wrap:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.img-caption h3 {
+    font-size: large;
+}
+
+.img-caption p {
+    font-size: small;
+}
+
+.card-news-con {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagecon img {
+    width: auto;
+    height: 200px;
+}
+
+.card-news-child {
+    height: fit-content;
+    padding: 5%;
+}
+
+.selengkapnya {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.judul-div h1 {
+    font-size: large;
+}
+
+.text-judul p {
+    font-size: small;
+}
+
+.judul-div {
+    padding-top: 10%;
+}
+
+.mit-con {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;       /* Biar nggak pindah ke bawah */
+  overflow-x: auto;        /* Munculkan scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Smooth di iOS */
+  gap: 16px;
+  width: 100%;   /* Biar lebar card mengikuti parent */
+  max-width: 100%;
+  padding: 10%; 
+}
+
+.card-mit-child {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  height: 200px;
+  flex: 0 0 auto;/* Biar lebar card tetap */
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-mit-child img {
+    height: 100px;
+    width: auto;
+}
+
+.inner-guru {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.ayo-guru-txt {
+    width: 100%;
+}
+
+.ayo-guru-txt h1 {
+    font-size: large;
+}
+
+.ayo-guru-txt p {
+    font-size: small;
+}
+
+.mit-jud-isi {
+    width: 100%;
+}

@@ -42,3 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Cari semua .img-wrap di galeri
+  const wraps = document.querySelectorAll('.img-wrap');
+
+  wraps.forEach(function(wrap) {
+    wrap.addEventListener('click', function() {
+      // Hapus dulu class active di semua .img-wrap lain
+      wraps.forEach(w => w.classList.remove('active'));
+      // Tambahkan class active ke yang di-tap
+      wrap.classList.add('active');
+    });
+  });
+
+  // Opsional: tap di luar, hilangkan animasi
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.img-wrap')) {
+      wraps.forEach(w => w.classList.remove('active'));
+    }
+  });
+});
+
