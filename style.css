@@ -34,7 +34,7 @@ header {
     top: 0; /* posisikan elemen menempel di sisi atas layar */
     z-index: 100;
     margin: 0 2% 0 2%;
-    background-color: #8dd160;
+    background-color: #5A7C44;
     border-radius: 0 0 10px 10px;
 }
 
@@ -590,23 +590,94 @@ header {
     padding-right: 5%;
 }
 
-.sambutan {
-    padding: 5%;
-    height: 1100px;
-    width: 1900px;
+
+.guru-prof {
+    padding: 0 10% 5% 10%;
+}
+
+.inner-guru {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.ayo-guru-txt h1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ayo-guru-txt {
+    width: 50%;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.ayo-guru-txt p {
+    margin-top: 5%;
+}
+
+.guru-tbl {
+    font-weight: 600;
+}
+
+.tombol-guru {
+    margin-top: 5%;
+}
+
+.sambutan {
+    padding: 10% 10% 10% 10%;
 }
 
 .inner-sambutan {
-    background-image: url(/assets/sambutan-img.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: auto;
-    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    height: 500px;
 }
 
-.inner-sambutan p {
-    visibility: hidden;
+.text-sambutan {
+    width: 50%;
+    padding-top: 10%;
+}
+
+.img-card {
+    background-image: url(/assets/kep-back.png);
+    border-radius: 50px;
+    background-size: cover;
+    width: 50%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-card:hover {
+    transform: translateY(-10px);
+}
+
+.img-card img {
+  transition: all 0.3s ease;
+  height: 500px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Tambahan: */
+}
+.img-card img:hover {
+  transform: scale(1.05);
+}
+
+
+.text-sambutan h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.nama-kep {
+    margin-top: 20%;
 }
