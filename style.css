@@ -628,6 +628,9 @@ header {
 
 .sambutan {
     padding: 10% 10% 10% 10%;
+    background-color: #dddddd;
+    background-image: url(/assets/crgh.png);
+    background-size: cover;
 }
 
 .inner-sambutan {
